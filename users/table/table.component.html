@@ -1,0 +1,24 @@
+<div class="div2">
+    <app-sidebar class="nav"></app-sidebar>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Number</th>
+        <th scope="col">Place</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+    
+      <tr *ngFor="let item of tabl">
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.Emplacement}}</td>
+        <tfoot ><input type="checkbox" name="tables_id" value="{{item.id}}" class="check" ngModel></tfoot> 
+      </tr>
+    
+    </tbody>
+  </table>
+  <button class="next" type="submit" (click)=" reserve(t)">Next</button>
+  <button class="cancel">Cancel</button>
+
+</div>

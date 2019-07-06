@@ -1,0 +1,68 @@
+
+
+th{
+    width: 300px;
+}
+.botton{
+	font-size: 16px;
+	margin-top: 15px;
+	transform: translate(45%, 50%);
+
+}
+/*----les bouttons-----*/
+.next{
+    margin-left: 42%;
+}
+.next{
+	background-color: #fff;
+    border: 1px solid #FF6107;
+	color:#FF6107;
+	margin-right: 15px;
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: 300;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s,color 0.2s;
+}
+
+.cancel{
+	border: 1px double #6495ED;
+	color:  #6495ED;
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: 300;
+	font-size: 16px;
+    background-color: #fff;
+	text-decoration: none;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s,color 0.2s;
+}
+
+.next:hover,
+.next:active{
+
+    border: 1px solid #FF6107;
+	color:  #fff;
+    background-color:#FF6107;
+}
+.cancel:hover,
+.cancel:active{
+	border: 1px solid #6495ED;
+    color: #fff;
+	background-color: #6495ED;
+}
+p{
+	background-color:#FFD2D2 
+	;
+	color: #D8000C;
+	width: 40px;
+	margin-left: 450px;
+
+}
+.div2 table{
+	margin-top: 70px;
+	margin-left: 27%;
+	font-size: 17px;
+}

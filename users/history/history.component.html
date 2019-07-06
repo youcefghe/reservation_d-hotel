@@ -1,0 +1,71 @@
+
+<div class="container">
+    <app-sidebar></app-sidebar>
+	<div class="row col-md-8 custyle">
+		<div class="span5">
+            <table class="table table-striped table-condensed">
+                  <thead>
+                  <tr>
+                      <th>ID</th>
+                      <th> Date</th>
+                      <th> Time</th>
+                      <th>Type</th>
+                      <th>ID_T</th>
+                      <th>Status</th> 
+                      <th>Menu</th>                                         
+                  </tr>
+              </thead>   
+              <tbody>
+                <tr *ngFor="let item of reservations">
+                    <td>{{item.id}}</td>
+                    <td>{{item.DateArrive_Res}}</td>
+                    <td>{{item.HeureArrive_Res}}</td>
+                    <td>{{item.Type_Res}}</td>
+                    <td>{{item.tables_id}}</td>
+                    <td><span >{{item.EtatR}}</span>
+                    </td>     
+                    <td><i class="fas fa-utensils" data-toggle="modal" data-target="#hiModal"   (click)="ShowMenu(item.id)" ></i></td>                                  
+                </tr>
+                                                 
+              </tbody>
+            </table>
+            </div>
+	</div>
+</div>
+<div class="modal" id="hiModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <span class="modal-title"> Menu</span>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body ">
+   <table class="table table-striped custab " >
+  <thead>
+ 
+      <tr >
+          <th>ID</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Category</th>
+          <th>Price</th>
+      </tr>
+  </thead>
+          <tr *ngFor="let item of Menu" [attr.id]="item.id">
+              <td>{{item.id}}</td>
+              <td>{{item.NomPlat}}</td>
+              <td>{{item.Description}}</td>
+              <td>{{item.Categore}}</td>
+              <td>{{item.Prix}}</td>
+          </tr>
+  </table>
+        </div>
+        
+       
+      </div>
+    </div>
+  </div>

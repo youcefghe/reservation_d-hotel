@@ -1,0 +1,272 @@
+.colorlib-reservation {
+    position: relative;
+}
+
+::selection{
+    color: #fcfcfc;
+    background: #FF6107;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+div {
+    display: block;
+}
+header {
+    font-family: "Poppins", Arial, sans-serif;
+    line-height: 1.8;
+    font-size: 15px;
+    font-weight: 400;
+    background: #FBFBFB;
+    color: #7d7d7d;
+    
+}
+ 
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+*:before, *:after {
+    box-sizing: border-box;
+}
+.row:after {
+    clear: both;
+}
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+.js .animate-box {
+    opacity: 0;
+}
+.intro-heading {
+    margin-bottom: 3em;
+    position: relative;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.text-center {
+    text-align: center;
+}
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+.animated {
+    opacity: 1;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.intro-heading h2 {
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 1.4;
+    position: relative;
+}
+p {
+    color: #7d7d7d;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0 0 10px;
+}
+.colorlib-reservation .intro-heading p {
+    color: #7d7d7d;
+}
+p, span {
+    margin-bottom: 1.5em;
+    font-weight: 400;
+    font-family: "Poppins", Arial, sans-serif;
+}
+.text-center {
+    text-align: center;
+}
+.colorlib-form .form-group .form-field .form-control {
+    padding-right: 50px;
+}
+.reservation-page .form-control {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #b0b0b0;
+}
+.colorlib-form .form-control {
+    height: 50px;
+    box-shadow: none;
+    font-size: 16px;
+    appearance: none;
+    background: rgba(255, 255, 255, 0.03);
+    border:  solid #FF6107;
+    border-width: 1px;
+    color:grey;
+}
+input[type="text"] {
+    height: 50px;
+}
+.form-control {
+    box-shadow: none;
+    border: none;
+    border: transparent;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 0px;
+    display: block;
+    width: 100%;
+    height: 42px;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border:  solid #FF6107;
+    border-radius: 4px;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input {
+    line-height: normal;
+    padding: 1px 0px;
+    background-color: white;
+    cursor: text;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+}
+input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
+    width: 100%;
+    cursor: pointer;
+}
+.colorlib-form .btn-block {
+    margin-top: 28px;
+    padding: 12px !important;
+}
+.btn {
+    margin-right: 4px;
+    margin-bottom: 4px;
+    font-size: 13px !important;
+    font-weight: 400;
+    font-family: "Lora", Georgia, serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    padding: 8px 20px;
+}
+.btn-block {
+    display: block;
+    width: 100%;
+}
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 1.42857;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+user agent stylesheet
+button::-webkit-file-upload-button, button {
+    padding: 1px 6px;
+    margin-right: 5px;
+}
+
+button::-webkit-file-upload-button, button {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: #fff;
+    background-color: #FF6107;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: #FF6107;
+    border-image: initial;
+}
+button {
+    -webkit-appearance: push-button;
+    user-select: none;
+    white-space: pre;
+}
+.error {
+  background-color: #fce4e4;
+  border: 1px solid #fcc2c3;
+  float: left;
+  padding: 20px 30px;
+}
+.error {
+  color: #cc0033;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  text-shadow: 1px 1px rgba(250,250,250,.3);
+}

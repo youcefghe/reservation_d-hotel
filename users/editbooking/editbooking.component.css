@@ -1,0 +1,47 @@
+h2 {
+  text-align: center;
+}
+
+.p {
+  text-align: center;
+  padding-top: 130px;
+}
+button{
+  font-size: 15px;
+  border-radius: 6px;
+}
+.del{
+  margin-left: 5px;
+  background-color: darkred;
+  color: white;
+  border-color: darkred;
+}
+.edit{
+  background-color: darkgreen;
+  color: white;
+  border-color: darkgreen;
+}
+.row{
+  margin-left: 200px;
+}
+table{
+  
+  /*width: 50%;*/
+ /* font-size: 15px;
+  margin-left: 200px;*/
+}
+.error {
+  background-color: #fce4e4;
+  border: 1px solid #fcc2c3;
+  float: left;
+  padding: 20px 30px;
+}
+.error {
+  color: #cc0033;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  text-shadow: 1px 1px rgba(250,250,250,.3);
+}

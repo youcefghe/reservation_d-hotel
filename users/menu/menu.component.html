@@ -1,0 +1,235 @@
+<div>
+    <app-sidebar></app-sidebar>
+</div>
+
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+	<div class="row">
+
+		<section class="content">
+			<h1 class="oun">Menu</h1>
+			<div class="col-md-8 col-md-offset-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div class="pull-right">
+							<div class="btn-group">
+								<button type="button" class="btn btn-success btn-filter" data-target="Salade">Salade</button>
+                <button type="button" class="btn btn-warning btn-filter" data-target="Plat">Plat</button>
+                <button type="button" class="btn btn-warning btn-filter" data-target="Pizza">Pizza</button>
+                <button type="button" class="btn btn-warning btn-filter" data-target="Sandwich">Sandwich</button>
+								<button type="button" class="btn btn-danger btn-filter" data-target="Boison">Boison</button>
+								
+							</div>
+						</div>
+						<div class="table-container">
+							<table class="table table-filter">
+								<tbody>
+									<tr data-status="Salade" *ngFor="let item of salade">
+										<td>
+											<div class="ckbox">
+												<input type="checkbox" id="checkbox{{item.id}}" class="check"  value="{{item.id}}">
+												<label for="checkbox{{item.id}}"></label>
+											</div>
+										</td>
+										<td>
+											<a href="javascript:;" class="star">
+												<i class="glyphicon glyphicon-star"></i>
+											</a>
+										</td>
+										<td>
+											<div class="media">
+												<a href="#" class="pull-left">
+													<img src="./../../../../assets/images/fruit.jpg" class="media-photo">
+												</a>
+												<div class="media-body">
+													<span class="media-meta pull-right">Febrero 13, 2016</span>
+													<h4 class="title">
+														{{item.NomPlat}}
+														<span class="pull-right Salade">(Salade)</span>
+													</h4>
+													<p class="summary">Description : {{item.Description}}</p>
+													<p class="summary">Prix : {{item.Prix}} DA</p>
+												</div>
+											</div>
+                    </td>
+                    <td>
+                        <select name="quant" class="quants" id="id{{item.id}}">
+                          <option value="1">1</option >
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                      </td>
+									</tr>
+									<tr data-status="Plat" *ngFor="let item of plat">
+										<td>
+											<div class="ckbox">
+												<input class="check" type="checkbox" id="checkbox{{item.id}}"  value="{{item.id}}">
+												<label for="checkbox{{item.id}}"></label>
+											</div>
+										</td>
+										<td>
+											<a href="javascript:;" class="star">
+												<i class="glyphicon glyphicon-star"></i>
+											</a>
+										</td>
+										<td>
+											<div class="media">
+												<a href="#" class="pull-left">
+													<img src="./../../../../assets/images/food.png" class="media-photo">
+												</a>
+												<div class="media-body">
+													<span class="media-meta pull-right">Febrero 13, 2016</span>
+													<h4 class="title">
+														{{item.NomPlat}}
+														<span class="pull-right Plat">(Plat)</span>
+													</h4>
+													<p class="summary">Description : {{item.Description}}</p>
+													<p class="summary">Prix : {{item.Prix}} DA</p>
+												</div>
+											</div>
+                    </td>
+                    <td>
+                      <select name="quant" class="quantp" id="id{{item.id}}">
+                        <option value="1">1</option >
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </td>
+									</tr>
+									<tr data-status="Pizza" *ngFor="let item of pizza">
+										<td>
+											<div class="ckbox">
+												<input class="check" type="checkbox" id="checkbox{{item.id}}" value="{{item.id}}">
+												<label for="checkbox{{item.id}}"></label>
+											</div>
+										</td>
+										<td>
+											<a href="javascript:;" class="star">
+												<i class="glyphicon glyphicon-star"></i>
+											</a>
+										</td>
+										<td>
+											<div class="media">
+												<a href="#" class="pull-left">
+													<img src="./../../../../assets/images/pizza.png" class="media-photo">
+												</a>
+												<div class="media-body">
+													<span class="media-meta pull-right">Febrero 13, 2016</span>
+													<h4 class="title">
+														{{item.NomPlat}}
+														<span class="pull-right Pizza">(Pizza)</span>
+													</h4>
+													<p class="summary">Description : {{item.Description}}</p>
+													<p class="summary">Prix : {{item.Prix}} DA</p>
+												</div>
+											</div>
+                    </td>
+                    <td>
+                        <select name="quant" class="quant" id="id{{item.id}}">
+                          <option value="1">1</option >
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                      </td>
+									</tr>
+									<tr data-status="Boison" *ngFor="let item of boison">
+										<td>
+											<div class="ckbox">
+												<input class="check" type="checkbox" id="checkbox{{item.id}}" value="{{item.id}}" >
+												<label for="checkbox{{item.id}}"></label>
+											</div>
+										</td>
+										<td>
+											<a href="javascript:;" class="star star-checked">
+												<i class="glyphicon glyphicon-star"></i>
+											</a>
+										</td>
+										<td>
+											<div class="media">
+												<a href="#" class="pull-left">
+													<img src="./../../../../assets/images/drink.png" class="media-photo">
+												</a>
+												<div class="media-body">
+													<span class="media-meta pull-right">Febrero 13, 2016</span>
+													<h4 class="title">
+														{{item.NomPlat}}
+														<span class="pull-right Boison">(Boison)</span>
+													</h4>
+													<p class="summary">Description : {{item.Description}}</p>
+													<p class="summary">Prix : {{item.Prix}} DA</p>
+												</div>
+											</div>
+                    </td>
+                    <td>
+                        <select name="quant" class="quantb" id="id{{item.id}}">
+                          <option value="1">1</option >
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                      </td>
+									</tr>
+									<tr data-status="Sandwich" *ngFor="let item of sandwich">
+										<td>
+											<div class="ckbox">
+												<input class="check" type="checkbox" id="checkbox{{item.id}}" value="{{item.id}}">
+												<label for="checkbox{{item.id}}"></label>
+											</div>
+										</td>
+										<td>
+											<a href="javascript:;" class="star">
+												<i class="glyphicon glyphicon-star"></i>
+											</a>
+										</td>
+										<td>
+											<div class="media">
+												<a href="#" class="pull-left">
+													<img src="./../../../../assets/images/taco.png" class="media-photo">
+												</a>
+												<div class="media-body">
+													<span class="media-meta pull-right">Febrero 13, 2016</span>
+													<h4 class="title">
+														{{item.NomPlat}}
+														<span class="pull-right Sandwich">(Sandwich)</span>
+													</h4>
+													<p class="summary">Description : {{item.Description}}</p>
+													<p class="summary">Price : {{item.Prix}} DA</p>
+												</div>
+											</div>
+                    </td>
+                    <td>
+                        <select name="quant" class="quantsn" id="id{{item.id}}">
+                          <option value="1">1</option >
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                      </td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<button class="next" type="submit" (click)=" reserve(t)">Save</button>
+                    <button class="cancel">Cancel</button>
+				</div>
+				<div class="content-footer oun">
+					<p>
+						Page © - 2019 <br>
+						Powered By <a href="#" target="_blank">ALg Nassim</a>
+					</p>
+				</div>
+			</div>
+		</section>
+		
+	</div>
+</div>

@@ -1,0 +1,141 @@
+header {
+ margin: 0px;
+ padding :0px;
+ background-image: url(../../../assets/images/cover_bg_2.jpg);
+ background-size: cover;
+   
+ background-position: center;
+ height: 100vh;
+}
+.wrapper{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 800px;
+    height: 450px;
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%,50%);
+
+}
+.wrapper:before{
+    content: '';
+    width: 350px;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+.header-area h2{
+    position: absolute;
+    top: 20%;
+    left:20%;
+    transform: translate(-50%,-50%);
+    width: 25%;
+    border: 12px inset #fff;
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+}
+.header-area p{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    color: #fff
+} 
+.social-area{
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+}
+.social-area i{
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+    margin:0 2px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 30px;
+}
+.social-area i:nth-child(1){
+  background: #ea4c89;
+}
+.social-area i:nth-child(3){
+    background: #0077b5;
+  }
+  .social-area i:nth-child(2){
+    background: #bd081c;
+  }
+  .social-area i:nth-child(4){
+    background: #55acee;
+  }
+  .form-area{
+      position: absolute;
+      top: 50%;
+      left: 70%;
+      transform: translate(-50%,-50%);
+      width: 350px;
+      overflow: hidden;
+  }
+  .form-area input{
+      outline: none;
+      padding: 0 0 0 35px;
+      border: 1px solid rgba(0, 0, 0, 0);
+      border-bottom-color: #262626;
+      background: transparent;
+    
+      width: 100%;
+      height: 35px;
+      margin-bottom: 10px;
+  }
+.form-area i{
+      width: 26px;
+      position: absolute;
+      
+      text-align: center;
+      
+      
+  }
+  .textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #4caf50;
+  }
+  .textbox i{
+    width: 26px;
+    float: left;
+    text-align: center;
+  }
+  .textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+  }
+  .form-area .ch{
+      margin: 20px 0 0 2px;
+      padding: 0;
+      border: 2px solid #262626;
+      width: 15px;
+      height: 15px;
+      -webkit-appearance: none;
+      background-color: #fff;
+      outline: none;
+  }
+ button{
+     width: 100%;
+     border: none;
+     height:30px ;
+     background-color: #262626;
+     color: #fff;
+     cursor: pointer;
+     padding: 0;
+ }

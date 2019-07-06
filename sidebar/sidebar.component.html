@@ -1,0 +1,66 @@
+<header>
+<div id="sidebar">
+  <div class="toggle-btn" (click)="toggleSidebar()">
+<span></span>
+<span></span>
+<span></span>
+  </div>
+ 
+  <ul>
+    <i class="fa fa-home"></i>
+    <a [routerLink]="['/user/userdash']" routerLinkActive="active"><li>Home </li></a>
+    <i class="fa fa-registered"></i>
+    <a [routerLink]="['/user/reservation/booking']" routerLinkActive="active"  ><li>Booking</li></a>
+    <i class="fa fa-truck"></i>
+    <a [routerLink]="['/user/reservation/delivry']" routerLinkActive="active" ><li>delivry</li></a>
+    <i class="fa fa-edit"></i>
+    <a [routerLink]="['/user/reservation/edit']" routerLinkActive="active" ><li>Edit</li></a>
+    <i class="fa fa-history"></i>
+    <a [routerLink]="['/user/reservation/history']" routerLinkActive="active" ><li>History</li></a>
+
+    <div>
+    <a title="Profile" data-toggle="modal" data-target="#mModal" (click)="profile()"><i class=" la5ar fa fa-user"></i></a>
+    <br>
+    <a title="Logout" (click)="Logout()"><i (click)="Logout()" class="fas fa-key"></i></a>
+  
+  </div>
+  </ul>
+</div>
+<div class="modal" id="mModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <span class="modal-title">Update User</span>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+    
+    <div class="form-div">
+         <form (ngSubmit)="SendU(dish)" #dish="ngForm">
+  <div class="form-group">
+    <input type="text" class="form-control" name="UserName" placeholder="{{username}}"  ngModel>
+  </div>
+  <div class="form-group">l
+    
+    <input type="text" class="form-control" name="Email" placeholder="{{email}}"  ngModel >
+  </div>
+  <div class="form-group">l
+    
+    <input type="text" class="form-control" name="PhoneNumber" placeholder="{{number}}"  ngModel >
+  </div>
+  
+  <button type="submit" class="btn btn-warning btn-block mybtn" id="addbtn">Update</button>
+  
+</form>
+    </div>
+        </div>
+        
+       
+      </div>
+    </div>
+  </div>
+</header>

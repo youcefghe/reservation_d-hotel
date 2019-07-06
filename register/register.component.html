@@ -1,0 +1,47 @@
+<header>
+  
+    <app-navbar ></app-navbar>
+<div class="wrapper">
+  <div class="header-area">
+    <h2>Subscribe</h2>
+    <p>Subscribe to our Social Media profile</p>
+  </div>
+  <div class="social-area">
+      <i class="fa fa-dribbble"></i>
+      <i class="fa fa-pinterest"></i>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-twitter"></i>
+  </div>
+  <form class="form-area" (ngSubmit)="onSignUp(su)" #su="ngForm">
+    <div class="text-box">
+    <i class="fa fa-user a"></i>
+    <input type="text" placeholder="Enter UserName" name="UserName" class="form-control" ngModel required>
+   </div> 
+    <div class="text-box">
+    <i class="fa fa-envelope a"></i>
+    <input type="email" name="Email" placeholder="Enter Email Address" class="form-control" ngModel required>
+  </div>
+    <div class="text-box">
+    <i class="fa fa-key"></i>
+    <input type="password" name="Password" placeholder="Enter Password" class="form-control" ngModel required>
+  </div>
+    <div class="text-box">
+    <i class="fa fa-key"></i>
+    <input type="password"  placeholder="Confirme Password" class="form-control"  >
+  </div>
+    <div class="text-box">
+    <i class="fa fa-phone"></i>
+    <input type="tel" name="PhoneNumber" placeholder="Enter Phone Number" class="form-control"  ngModel  >
+  </div>
+    <div class="text-box">
+    <i class="fa fa-address-card"></i>
+    <input type="text" name="Address" placeholder="Enter Address" ngModel class="form-control" >
+  </div>
+  <div>
+    <input class="ch" type="checkbox" value="Bike"><label>I will Obey Terms and Conditions</label>
+    
+<button type="submit" [disabled]="!su.valid">Signup</button> 
+  </div>
+</form>
+</div>
+</header>
