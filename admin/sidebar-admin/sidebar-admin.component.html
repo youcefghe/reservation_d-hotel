@@ -1,0 +1,79 @@
+<div id="wrapper" class="animate">
+  <nav class="navbar header-top fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" id="use">{{username}}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav animate side-nav">
+        <li class="nav-item" >
+          <a class="nav-link" [routerLink]="['/admindash']" routerLinkActive="router-link-active"  title="Dashboard"><i class="fas fa-chart-line"></i> Dashboard <i class="fas fa-chart-line shortmenu animate"></i></a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" [routerLink]="['/delbooking']" routerLinkActive="router-link-active" title="Booking Mang"><i class="fas fa-archive"></i> Booking Mang <i class="fas fa-archive shortmenu animate"></i></a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link"  [routerLink]="['/mandel']" routerLinkActive="router-link-active" title="Dishes Mang"><i class="fas fa-truck"></i> Delivry Mang <i class="fas fa-truck shortmenu animate"></i></a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link"  [routerLink]="['/mandish']" routerLinkActive="router-link-active" title="Dishes Mang"><i class="fas fa-utensils"></i> Dishes Mang <i class="fas fa-utensils shortmenu animate"></i></a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link"  [routerLink]="['/mantab']" routerLinkActive="router-link-active" title="Tables Mang"><i class="fas fa-table"></i> Tables Mang <i class="fas fa-table shortmenu animate"></i></a>
+        </li>
+         <li class="nav-item" >
+          <a class="nav-link" [routerLink]="['/mantime']" routerLinkActive="router-link-active" title="Time Mang"><i class="fas fa-clock"></i> Time Mang <i class="fas fa-clock shortmenu animate"></i></a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" [routerLink]="['/manuser']" routerLinkActive="router-link-active" title="Users Mang"><i class="fas fa-users-cog"></i> Users Mang <i class="fas fa-users-cog shortmenu animate"></i></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-md-auto d-md-flex">
+        <li class="nav-item">
+          <a class="nav-link" ><i (click)="profile()" data-toggle="modal" data-target="#kModal" class="fas fa-user"></i> Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="Logout()"><i class="fas fa-key"></i> Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="modal" id="kModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <span class="modal-title">Update User</span>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+    
+    <div class="form-div">
+         <form (ngSubmit)="SendM(dis)" #dis="ngForm">
+  <div class="form-group">
+    <input type="text" class="form-control" name="UserName" placeholder="{{username}}"  ngModel>
+  </div>
+  <div class="form-group">l
+    
+    <input type="text" class="form-control" name="Email" placeholder="{{email}}"  ngModel >
+  </div>
+  <div class="form-group">l
+    
+    <input type="text" class="form-control" name="PhoneNumber" placeholder="{{number}}"  ngModel >
+  </div>
+  
+  <button type="submit" class="btn btn-warning btn-block mybtn" id="addbtn">Update</button>
+  
+</form>
+    </div>
+        </div>
+        
+       
+      </div>
+    </div>
+  </div>

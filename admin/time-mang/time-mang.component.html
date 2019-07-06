@@ -1,0 +1,150 @@
+<app-sidebar-admin></app-sidebar-admin>
+<div class="container">
+  <div class="row col-md-6 col-md-offset-2 custyle">
+    <table class="table table-striped custab">
+    <thead>
+    	 <div id="ba">
+    	    <button id="botac" (click)="active()" class="btn btn-primary btn-xs pull-right">Open Restaurant</button>
+    <button id="botdes" (click)="desactive()" class="btn btn-warning btn-xs pull-right">Close Restaurant</button>
+    </div>
+    <button id="bot" class="btn btn-primary btn-xs pull-right">Change Work Time</button>
+   
+
+        <tr >
+            <th>ID</th>
+                <th>Open Time</th>
+                <th>Close Time</th>
+            <th class="text-center">Action</th>
+        </tr>
+    </thead>
+              <tr *ngFor="let item of table" [attr.id]="item.id">
+                <td>{{item.id}}</td>
+                <td >{{item.HeureOuvert}}</td>
+                <td >{{item.HeureFerme}}</td>
+                <td class="text-center"><i data-toggle="modal" data-target="#editModal"   (click)="edit(item.id)" class="fas fa-edit"></i>
+                 </td>
+            </tr>
+    </table>
+   <div class="modal" id="editModal">
+      <div class="modal-dialog">
+         <div class="modal-content">
+      
+        <!-- Modal Header -->
+           <div class="modal-header">
+             <span class="modal-title"> Edit Time</span>
+            <button type="button" class="close" data-dismiss="modal">×</button>
+           </div>
+        <!-- Modal body -->
+           <div class="modal-body"> 
+              <div class="form-div">
+                <form (ngSubmit)="onUpDish(etdis)" #etdis="ngForm">
+             <div class="form-group">l
+              <input type="text" class="form-control" name="HeureOuvert" placeholder="Open Time" ngModel >
+              </div>
+             <div class="form-group">l
+                <input type="text" class="form-control" name="HeureFerme" placeholder="Close Time" ngModel >
+             </div>
+                <button type="submit" id="editid" class="btn btn-warning btn-block mybtn"  >Edit</button>
+               </form>
+              </div>
+           </div>
+           </div>
+        </div>
+    </div>
+</div>
+  <div class="row col-md-6 col-md-offset-2 custyle">
+    <table class="table table-striped custab">
+    <thead>
+    <button id="bot" data-toggle="modal" data-target="#mModal" class="btn btn-primary btn-xs pull-right"><b>+</b> Add new holiday</button>
+        <tr >
+            <th>ID</th>
+                <th>Date</th>
+            <th class="text-center">Action</th>
+        </tr>
+    </thead>
+              <tr *ngFor="let item of vacance" [attr.id]="item.id">
+                <td>{{item.id}}</td>
+                <td >{{item.Date}}</td>
+                <td class="text-center"><i data-toggle="modal" data-target="#edtModal"   (click)="edit(item.id)" class="fas fa-edit"></i>
+                 <i  data-toggle="modal" data-target="#dlModal"  (click)="edit(item.id)"class="fas fa-trash"></i></td>
+            </tr>
+    </table>
+    
+    <div class="modal" id="mModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <span class="modal-title"> Add Holiday</span>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+    
+    <div class="form-div">
+         <form (ngSubmit)="onCrDish(dis)" #dis="ngForm">
+  <div class="form-group">
+    <input type="Date" class="form-control" name="Date" placeholder="Date" ngModel >
+  </div>
+ 
+  <button type="submit" class="btn btn-warning btn-block mybtn" id="addbtn">Add</button>
+  
+</form>
+    </div>
+        </div>
+        
+       
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="edtModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <span class="modal-title"> Edit Holiday</span>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+    
+    <div class="form-div">
+         <form (ngSubmit)="onUpHoliday(ethol)" #ethol="ngForm">
+ <div class="form-group">
+    <input type="Date" class="form-control" name="Date" placeholder="Date" ngModel >
+  </div>
+  <button type="submit" id="editid" class="btn btn-warning btn-block mybtn"  >Edit</button>
+  
+</form>
+    </div>
+        </div>
+        
+       
+      </div>
+    </div>
+  </div>
+<div class="modal" id="dlModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Are you sure???</h4>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to delete (this)?</p>
+        <div class="row">
+            <div class="col-12-xs text-center">
+                <button class="btn btn-success btn-md" (click)="dele()" data-dismiss="modal">Yes</button>
+                <button class="btn btn-danger btn-md"  data-dismiss="modal">No</button>
+            </div>
+        </div>
+      </div>
+   
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</div>
+</div>

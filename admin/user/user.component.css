@@ -1,0 +1,224 @@
+h2 {
+  text-align: center;
+}
+
+.p {
+  text-align: center;
+  padding-top: 130px;
+}
+table{
+	font-size: 17px;
+}
+button{
+	border-radius: 6px;
+}
+#bot{
+	size:80px;
+	font-size: 16px;
+}
+button{
+	font-size: 17px;
+}
+i{
+	font-size: 17px;
+	color: red;
+}
+.fa-trash{
+  margin-left: 7px;
+  background-color: white;
+  color: darkred;
+  border-color: darkred;
+  
+
+	
+}
+.fa-edit{
+  background-color: white;
+  color: darkgreen;
+  border-color: darkgreen;
+ 
+	
+}
+.row{
+  margin-left: 200px;
+  
+}
+
+tr{
+	font-size: 14px;
+}
+body{font-family:'Nanum Gothic', sans-serif;
+	font-size:14px;
+	color:#777;
+	height: 600px;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+	
+	
+	a{
+		color:#777;
+	}
+	a:hover{
+		color:#f39305;
+		text-decoration:none;
+		}
+.text-center{text-align:center;}
+.banner-heading{
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 75px;
+    font-weight: 700;
+    line-height: 100px;
+    margin-bottom: 30px;
+	color:#fff;
+}
+.banner-sub-heading{
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 50px;
+	color:#fff;
+}
+.btn-warning{background-color:#eca439;}
+.btn-warning:hover{background-color:#f39305;}
+.mybtn{
+	border-radius:0; 
+	height:30px;
+	margin:10px auto;
+	line-height:10px;
+}
+.form-control{
+	color:#d1d1d1;
+	font-size:14px;
+	font-weight:400;
+	border-bottom:2px solid #f39305;
+	border-top:0;
+	border-left:0;
+	border-right:0;
+	height:30px;
+}
+.form-check-input{
+	background-color:#fff !important;
+	border-radius:50% !important;
+	border:2px solid #f39305 !important;
+}
+.modal-content{
+	width:400px;
+	margin:auto;
+}
+
+.modal-header {
+    padding:0.7rem 1rem;
+    border-bottom: 1px solid #e9ecef;
+   border-radius:0;
+	background-color:#9a4a05;
+}
+.modal-title{
+	font-size:16px;
+	font-family: 'Nanum Gothic', sans-serif;
+	text-transform:uppercase;
+	color:#fff;
+	text-align:center;
+	}
+.modal-body{
+	background-image:url('http://snippetimg.meditialabs.com/bgs/bg1.jpg');
+	background-position:top left;
+	background-size:cover;
+	width:100%;
+	padding:1.5rem 3rem 3rem 3rem;
+}
+body.modal-open .supreme-container{
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+}
+.text-intro{
+	font-size:0.8em;
+	color:#777;
+	text-align:center;
+}
+.form-div{
+	background-color:#fff;
+	padding:2em 1.5em;
+	box-shadow:2px 2px 2px 2px rgba(215,215,215,0.5);
+}
+
+
+
+form{
+	border:0 !important;
+}
+@media (max-width:500px){
+	.modal-content{
+	width:330px;
+	margin:auto;
+}
+.banner-heading{
+	font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.banner-sub-heading{
+	font-size: 10px;
+    font-weight: 200;
+    line-height: 10px;
+    margin-bottom: 40px;
+}
+}
+@media (max-width:768px){
+	.banner-text{
+	padding:150px 0 150px 0;
+}
+	.banner-sub-heading{
+	font-size: 23px;
+    font-weight: 200;
+    line-height: 23px;
+    margin-bottom: 40px;
+}
+}
+#bb{
+	color: darkgreen;
+	margin-left: 5px; 
+}

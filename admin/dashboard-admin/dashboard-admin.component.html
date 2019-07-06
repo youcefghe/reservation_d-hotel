@@ -1,0 +1,74 @@
+<div class="container">
+  <app-sidebar-admin></app-sidebar-admin>
+  <div class="row">
+  <div class="col-md-3">
+    <div class="card-counter primary">
+      <i class="fa fa-code-fork"></i>
+      <span class="count-numbers">{{facture}}</span>
+      <span class="count-name">Not Payed</span>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card-counter danger">
+      <i class="fa fa-ticket"></i>
+      <span class="count-numbers">{{reser}}</span>
+      <span class="count-name">Reservations</span>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card-counter success">
+      <i class="fa fa-database"></i>
+      <span class="count-numbers">6875</span>
+      <span class="count-name">Data</span>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card-counter info">
+      <i class="fa fa-users"></i>
+      <span class="count-numbers">{{util}}</span>
+      <span class="count-name">Users</span>
+    </div>
+  </div>
+</div>
+<div class="d row col-md-4 custyle">
+  <h2>Messages</h2>
+  <table class="table table-striped custab">
+  <thead>
+ 
+      <tr >
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Message</th>
+          <th class="text-center">Action</th>
+      </tr>
+  </thead>
+          <tr *ngFor="let item of Message" [attr.id]="item.id">
+              <td>{{item.id}}</td>
+              <td>{{item.Name}}</td>
+              <td>{{item.Email}}</td>
+              <td>{{item.Message}}</td>
+              <td class="text-center">  <button value="{{item.id}}" class="del" (click)="delete(item.id)">Del </button></td>
+          </tr>
+  </table>
+</div>
+  <div class="f row col-md-6 custyle">
+  <h2>Notifications</h2>
+  <table class="table table-striped custab">
+  <thead>
+ 
+      <tr >
+          <th>Notification</th>
+          <th class="text-center">Action</th>
+      </tr>
+  </thead>
+          <tr *ngFor="let item of Notification" [attr.id]="item.id">
+              <td>{{item.Notification}}</td>
+              <td class="text-center">  <button value="{{item.id}}" class="del" (click)="dele(item.id)">Del </button></td>
+          </tr>
+  </table>
+  </div>
+</div>

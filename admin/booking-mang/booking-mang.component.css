@@ -1,0 +1,53 @@
+h2 {
+    text-align: center;
+  }
+  
+  .p {
+    text-align: center;
+    padding-top: 130px;
+  }
+  button{
+    font-size: 15px;
+    border-radius: 6px;
+  }
+  .del{
+    margin-left: 5px;
+    background-color: darkred;
+    color: white;
+    border-color: darkred;
+  }
+  .modal-title{
+  font-size:16px;
+  font-family: 'Nanum Gothic', sans-serif;
+  text-transform:uppercase;
+  color:#fff;
+  text-align:center;
+  }
+  .modal-header {
+    padding:0.7rem 1rem;
+    border-bottom: 1px solid #e9ecef;
+   border-radius:0;
+  background-color:#007bff;
+}
+  .row{
+    margin-left: 200px;
+     
+  }
+  table{
+      
+    /*width: 570px;*/
+   /* font-size: 15px;
+    margin-left: 200px;*/
+  }
+  th{
+      font-size: 15px;
+  }
+td{
+    font-size: 17px;
+
+}
+i{
+  color: #007bff;
+  font-size: 18px;
+}
+

@@ -1,0 +1,65 @@
+<app-sidebar-admin></app-sidebar-admin>
+<div class="container">
+  <div class="d row col-md-8 col-md-offset-2 custyle">
+  <table class="table table-striped custab">
+  <thead>
+
+      <tr >
+          <th>ID</th>
+          <th>Arrive Date</th>
+          <th>Arrive Time</th>
+          <th>Type</th>
+          <th>User</th>
+          <th>Menu</th>
+          <th class="text-center">Action</th>
+      </tr>
+  </thead>
+          <tr *ngFor="let item of reservation" [attr.id]="item.id">
+              <td>{{item.id}}</td>
+              <td>{{item.DateArrive}}</td>
+              <td>{{item.HeureArrive}}</td>
+              <td>{{item.Type}}</td>
+              <td>{{item.users_id}}</td>
+              <td><i class="fas fa-utensils" data-toggle="modal" data-target="#hiModal"   (click)="ShowMenu(item.id)" ></i></td>
+              <td class="text-center">  <button value="{{item.id}}" class="del" (click)="delete(item.id)">Del </button></td>
+          </tr>
+  </table>
+  </div>
+</div>
+<div class="modal" id="hiModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <span class="modal-title"> Menu</span>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body ">
+   <table class="table table-striped custab " >
+  <thead>
+ 
+      <tr >
+          <th>ID</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Category</th>
+          <th>Price</th>
+      </tr>
+  </thead>
+          <tr *ngFor="let item of Menu" [attr.id]="item.id">
+              <td>{{item.id}}</td>
+              <td>{{item.NomPlat}}</td>
+              <td>{{item.Description}}</td>
+              <td>{{item.Categore}}</td>
+              <td>{{item.Prix}}</td>
+          </tr>
+  </table>
+        </div>
+        
+       
+      </div>
+    </div>
+  </div>

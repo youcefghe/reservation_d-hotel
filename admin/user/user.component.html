@@ -1,0 +1,26 @@
+<app-sidebar-admin></app-sidebar-admin>
+<div class="container">
+    <div class="row col-md-8 custyle">
+    <table class="table table-striped custab">
+    <thead>
+        <tr >
+            <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>PhoneNumber</th>
+            <th class="text-center">Action</th>
+        </tr>
+    </thead>
+              <tr *ngFor="let item of users" [attr.id]="item.id">
+                <td>{{item.id}}</td>
+                <td >{{item.UserName}}</td>
+                <td >{{item.Email}}</td>
+                <td >{{item.Address}}</td>
+                <td >{{item.PhoneNumber}}</td>
+                <td class="text-center"><i    (click)="banne(item.id)" class="fas fa-user-lock" title="banne"></i>
+                 <i class="fas fa-unlock" (click)="desbanne(item.id)" title="desbanne" id="bb"></i></td>
+            </tr>
+    </table>
+    </div>
+</div>

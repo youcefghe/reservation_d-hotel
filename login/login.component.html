@@ -1,0 +1,28 @@
+<header>
+  
+    <app-navbar ></app-navbar>
+    <form  (ngSubmit)="onLogin(log)" #log="ngForm">
+<div class="login-box">
+    
+    <h1>Login</h1>
+    <div class="alert alert-danger" [hidden]="!error">
+        {{error}}
+      </div>
+    <div class="textbox">
+      <i class="glyphicon glyphicon-user"></i>
+
+      <input type="email" name="Email" id="email" placeholder="Email" [(ngModel)]="Email" required>
+     
+    </div>
+  
+    <div class="textbox">
+      <i class="glyphicon glyphicon-lock"></i>
+<input type="password"  name="Password" id="Password" placeholder="Password" [(ngModel)]="Password" required>
+      
+    </div>
+    <button type="submit" class="btn" [disabled]="!log.valid">Login</button>
+     <p class="error">{{erreur}}</p>
+  </div>
+  <!--<form #loginForm=ngForm (ngSubmit)="onSubmit()"></form>-->
+</form>
+</header>
